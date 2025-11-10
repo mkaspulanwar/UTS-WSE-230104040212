@@ -49,7 +49,22 @@ Pastikan Anda sudah menginstal:
 
 ## 📚 Resource Utama: `courses`
 
-[cite_start]Resource yang diimplementasikan didasarkan pada digit akhir NIM ([Digit Akhir NIM Anda])[cite: 61], yaitu **`courses`** (Data Mata Kuliah).
+Resource yang diimplementasikan didasarkan pada digit akhir NIM (230104040212), yaitu **`courses`** (Data Mata Kuliah).
+
+| Digit Akhir NIM | Resource | Deskripsi | Field Utama (wajib ada) |
+| :---: | :--- | :--- | :--- |
+| 0 | books | Data buku | title, author, year |
+| 1 | articles | Data artikel | title, author, content |
+| 2 | courses | Data mata kuliah | code, title, credits |
+| 3 | students | Data mahasiswa | name, npm, major |
+| 4 | employees | Data pegawai | name, position, salary |
+| 5 | members | Data anggota organisasi | name, role, joinedAt |
+| 6 | events | Data kegiatan kampus | title, date, location |
+| 7 | movies | Data film | title, genre, year |
+| 8 | orders | Data pesanan | product, quantity, price |
+| 9 | tasks | Data tugas | title, deadline, status |
+
+---
 
 ### Field Utama (Wajib Ada)
 
