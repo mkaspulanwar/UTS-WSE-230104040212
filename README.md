@@ -11,6 +11,7 @@ Proyek ini adalah implementasi **RESTful API** berbasis **Node.js** dan **Expres
 | **Pengembang Proyek** | M. Kaspul Anwar | 230104040212 | [![](https://img.shields.io/badge/GitHub-M.KaspulAnwar-181717?style=flat&logo=github)](https://github.com/mkaspulanwar) |
 | **Dosen Pengampu** | Muhayat, M. IT | - | [![](https://img.shields.io/badge/GitHub-Muhayat,M.IT-181717?style=flat&logo=github)](https://github.com/muhayat-lab) |
 
+---
 
 ## 🛠️ Persiapan dan Instalasi
 
@@ -19,6 +20,8 @@ Pastikan Anda sudah menginstal:
 1.  **Node.js**
 2.  **npm** (Node Package Manager)
 3.  **Postman** (untuk pengujian API)
+
+---
 
 ### Langkah-langkah Menjalankan Proyek
 
@@ -59,6 +62,8 @@ Setiap objek *course* memiliki *field* berikut:
 | `title` | String | Nama mata kuliah (Wajib) |
 | `credits` | Integer | Jumlah SKS (Wajib) |
 
+---
+
 ### Contoh Format Data
 ```json
 [
@@ -80,6 +85,8 @@ src/
 README.md
 ```
 
+---
+
 ### Spesifikasi Endpoint RESTful
 
 Semua endpoint menggunakan prefix `/api`.
@@ -92,3 +99,34 @@ Semua endpoint menggunakan prefix `/api`.
 | **PUT** | `/api/courses/:id` | Update data course. | 200 / 400 / 404 |
 | **DELETE** | `/api/courses/:id` | Hapus data course. | 204 / 404 |
 | **GET** | `/api/info` | Informasi service (Discoverability). | 200 |
+
+---
+
+### Contoh Validasi dan Error Handling (Status 400)
+
+Jika *field* wajib (**code**, **title**, atau **credits**) kosong saat mengirim data, API akan merespon dengan **Status Code 400 Bad Request** dan format *response* error sebagai berikut:
+
+```json
+{
+  "status": "fail",
+  "message": "Field 'title' wajib diisi"
+}
+```
+---
+
+### Penerapan 7 Prinsip RESTful API
+
+Berikut adalah daftar 7 Prinsip RESTful yang diterapkan dalam proyek ini:
+
+| No | Prinsip | Implementasi |
+| :---: | :--- | :--- |
+| **1** | **Resource-Oriented URI** | Menggunakan kata benda jamak `/api/courses`. |
+| **2** | **Proper HTTP Methods** | Menggunakan GET, POST, PUT, DELETE sesuai fungsi CRUD. |
+| **3** | **Stateless Communication** | Tidak menyimpan *session* atau *state* klien di server. |
+| **4** | **Consistent Status Codes** | Menggunakan 200, 201, 204, 400, 404 tepat sesuai konteks. |
+| **5** | **JSON Representation** | Semua *response* dan *request body* menggunakan format JSON yang rapi dan seragam. |
+| **6** | **Validation & Error Handling** | Melakukan validasi *field* wajib dan mengirimkan *error* 400 Bad Request jika gagal. |
+| **7** | **Discoverability** | Menyediakan *endpoint* `/api/info` sebagai *metadata service*. |
+
+
+---
