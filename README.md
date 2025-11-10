@@ -1,4 +1,4 @@
-# UTS-WSE-NimAnda
+# UTS-WSE-230104040212
 
 ## Web Service Engineering - Ujian Tengah Semester Ganjil 2025
 
@@ -6,7 +6,7 @@ Proyek ini adalah implementasi **RESTful API** berbasis **Node.js** dan **Expres
 
 ## Tim Developer
 
-| Peran | Nama | Profil GitHub |
+| Peran | Nama | NIM | Profil GitHub |
 | :--- | :--- | :--- | :--- |
 | **Pengembang Proyek** | M. Kaspul Anwar | 230104040212 | [![](https://img.shields.io/badge/GitHub-M.KaspulAnwar-181717?style=flat&logo=github)](https://github.com/mkaspulanwar) |
 | **Dosen Pengampu** | Muhayat, M. IT | - | [![](https://img.shields.io/badge/GitHub-Muhayat,M.IT-181717?style=flat&logo=github)](https://github.com/muhayat-lab) |
