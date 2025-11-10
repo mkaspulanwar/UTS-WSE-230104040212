@@ -1,6 +1,6 @@
 # UTS-WSE-NimAnda
 
-## Web Service Engineering - Ujian Tengah Semester Ganjil 20251
+## Web Service Engineering - Ujian Tengah Semester Ganjil 2025
 
 Proyek ini adalah implementasi **RESTful API** berbasis **Node.js** dan **Express.js** untuk memenuhi tugas Ujian Tengah Semester Mata Kuliah Web Service Engineering. API ini diimplementasikan dengan operasi **CRUD (Create, Read, Update, Delete)** lengkap dan menerapkan **7 Prinsip RESTful API** secara eksplisit.
 
@@ -8,8 +8,8 @@ Proyek ini adalah implementasi **RESTful API** berbasis **Node.js** dan **Expres
 
 | Komponen | Detail |
 | :--- | :--- |
-| **Nama** | [NAMA LENGKAP ANDA] |
-| **NIM** | [NIM LENGKAP ANDA] |
+| **Nama** | M. KASPUL ANWAR |
+| **NIM** | 230104040212 |
 | **Program Studi** | Teknologi Informasi |
 | **Mata Kuliah** | Web Service Engineering |
 
